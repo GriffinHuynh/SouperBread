@@ -1,26 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap");
+
+* {
+  font-family: "Baloo 2", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .nav-link {
   cursor: pointer;
   text-decoration: none;
   color: black;
+  font-size: 1.1rem;
 }
 
 .nav-menu-right,
 .nav-menu-left {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 1rem;
   list-style: none;
 }
 
 .nav-container {
   display: flex;
+  background-color: #b07645;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
+
 .nav-menu-left {
-margin-right: auto;
+  margin-right: auto;
 }
 
 .nav-container li {
   margin-right: 1rem;
+}
+
+#logo {
+  margin-right: 1rem;
+}
+
+.footer-container {
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
