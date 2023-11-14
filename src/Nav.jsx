@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 const Nav = () => {
   return (
-    <div className="nav-container">
+    <div className="nav-container navbar-dark bg-dark">
       <nav className="navbar navbar-expand-lg">
         <NavLink className="navbar-brand" to="/">
           <img src="https://static.vecteezy.com/system/resources/thumbnails/010/975/945/small/blue-cartoon-circle-button-png.png" alt="logo" height={80}/>
@@ -66,19 +66,19 @@ const Nav = () => {
               </NavLink>
             </li>
           </ul>
+          <div className="nav-menu-right">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/login"><i className="fa-solid fa-user"></i></NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/cart"><i className="fa-solid fa-bag-shopping"></i> </NavLink>
+              </li>
+              <li className="nav-item">
+                <span className="nav-link"><i className="fa-solid fa-magnifying-glass"></i></span>
+              </li>
+            </ul>
         </div>
-        <div className="ml-auto">
-          <ul className="navbar-nav nav-menu-right">
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/login"><i className="fa-solid fa-user"></i></NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/cart"><i className="fa-solid fa-bag-shopping"></i> </NavLink>
-            </li>
-            <li className="nav-item">
-              <span className="nav-link"><i className="fa-solid fa-magnifying-glass"></i></span>
-            </li>
-          </ul>
         </div>
       </nav>
     </div>
